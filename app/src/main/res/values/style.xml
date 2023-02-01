@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="background">
+        <item name="android:background">@color/color0099cc</item>
+    </style>
+
+    <style name="loggedInTopBar">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/Red</item>
+    </style>
+
+    <style name="button">
+        <item name="android:backgroundTint">@color/gray</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

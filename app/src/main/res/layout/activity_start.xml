@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color00cccc"
+    tools:context=".StartActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Identification"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:padding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/Red"
+        style="@style/background"
+        />
+
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:id="@+id/edUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBaseline_toBaselineOf="@id/tvUsername"
+        app:layout_constraintLeft_toRightOf="@id/tvUsername"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        app:layout_constraintStart_toStartOf="@+id/tvUsername"
+        app:layout_constraintTop_toBottomOf="@id/tvUsername"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:id="@+id/edPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="textPassword"
+        android:text=""
+        app:layout_constraintBaseline_toBaselineOf="@id/tvPass"
+        app:layout_constraintLeft_toRightOf="@id/tvPass"
+
+        />
+
+    <Button
+        android:id="@+id/tvValidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validate"
+        app:layout_constraintStart_toStartOf="@+id/tvPass"
+        app:layout_constraintTop_toBottomOf="@id/tvPass"
+        android:layout_marginTop="10dp"
+        style="@style/button"
+
+        />
+
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flag"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="6dp"
+        android:textColor="@color/black"
+        style="@style/background"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
